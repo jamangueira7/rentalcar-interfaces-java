@@ -8,7 +8,7 @@ public class BATaxService implements TaxService {
             return amount * 0.1;
         }
         else {
-            return amount * 0.5;
+            return amount * 0.05;
         }
     }
 }
