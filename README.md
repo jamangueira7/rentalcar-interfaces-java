@@ -7,9 +7,8 @@
 </p>
 <br>
 
-## Formatador de dados de um arquvo
+# Locação de veículo
 
-Desenvolvido com o video [java curso completo](https://pt.stackoverflow.com/questions/27013/como-ler-arquivos-csv-em-java) do professor @acenelio .
 
 ## 🚀 Tecnologias
 
@@ -19,29 +18,44 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 💻 Projeto
 
-Um sistema que ler arquivos csv e gravar outro com os dados formatados.
+O sistema serve para calcular o valor de um aluguel de carro.
 
-Para testar use o caminho `C:\programacao\java\read-file-txt-write-csv\dirTest\input.csv.txt`
-Caso vá testar no Linux é preciso mudar o codigo nas linhas:
-- 22 ---> ```boolean success = new File(sourceFolderStr + "\\out").mkdir();```
-- 22 ---> ```boolean success = new File(sourceFolderStr + "/out").mkdir();```
-- 24 ---> ```String targetFileStr = sourceFolderStr + "\\out\\summary.csv";```
-- 24 ---> ```String targetFileStr = sourceFolderStr + "/out/summary.csv";```
+O usuario deve entrar com o valor do modelo do carro, data de retirada, retorno, preço por hora e preço por dia do veiculo.
 
-#### Teste
+Caso a quantidade de horas seja menor igual a 12h o valor da locação deve ser calculada por hora;
+
+Caso seja maior que 12 o valor deve ser calculado por dia.
+
+Impostos por estado:
+
+- SP: 20% menores que R$ 200.00 e 15% para valores maiores.
+- RJ: 30% menores que R$ 200.00 e 25% para valores maiores.
+- MG: 15% menores que R$ 200.00 e 10% para valores maiores.
+- BA: 10% menores que R$ 200.00 e 5% para valores maiores.
+- 
+#### Teste imposto SP
+
 ![img.png](.github%2Fimg.png)
 
-#### Estrutura de pasta
+![img_4.png](.github%2Fimg_4.png)
+
+#### Teste imposto RJ
 
 ![img_1.png](.github%2Fimg_1.png)
 
-#### Arquivo de entrada
+![img_5.png](.github%2Fimg_5.png)
+
+#### Teste imposto MG
 
 ![img_2.png](.github%2Fimg_2.png)
 
-#### Arquivo de saída
+![img_6.png](.github%2Fimg_6.png)
+
+#### Teste imposto BA
 
 ![img_3.png](.github%2Fimg_3.png)
+
+![img_7.png](.github%2Fimg_7.png)
 
 ## 🚀 Como Rodar
 

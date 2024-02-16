@@ -8,9 +8,7 @@ import model.entities.Invoice;
 public class RentalService {
     private Double pricePerDay;
     private Double pricePerHour;
-
     private TaxService taxService;
-
     public RentalService(Double pricePerDay, Double pricePerHour, TaxService taxService) {
         this.pricePerDay = pricePerDay;
         this.pricePerHour = pricePerHour;
